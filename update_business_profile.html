@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<!-- Weconnect title is clear-->
+<head>
+<title>WeConnect</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+.tangerine {
+    font-family: "Tangerine", serif;
+}
+.container{
+    width:100%
+}
+.logo{
+    width:100%;
+    float:left;
+}
+.register_biz{
+    width:100%;
+}
+.new_business{
+    width:90%;
+    float:right;
+}
+.image{
+	width:150px;
+	height:150px;
+}
+.footer{
+    width:100%;
+}
+</style>
+</head>
+
+<!-- Here we have the signup page body -->
+<body>
+  <div class = "main_enclosure">
+  
+  <div class = "container">
+  
+    <!-- here we have top element, logo -->
+    
+      <!-- company logo div will sit at the top left of tha page as users are used to the format -->
+      <div class = "logo tangerine s">
+        <h1><a href="index.html"><span>We</span>Connect</a></h1>
+      </div>
+      
+    </div>
+    
+  <div class = "container mid_content">
+  
+  <!-- main page div that contains the meat of the page -->  
+  
+  <div class = "media register_biz">
+    <div>
+     <img class="rounded-circle float-left img-thumbnail image mr-1" src="https://images.pexels.com/photos/331990/pexels-photo-331990.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+    </div>
+    <div class="media-body new_business ml-1">
+     <form action="#" method="post">
+		<div>
+			<div>
+				<label>Business Name<span class="req">*</span></label>
+				<input class="form-control" name="username" type="text" placeholder="Username">
+			</div>
+		</div>
+			<div>
+				<label>Location<span class="req">*</span></label>
+				<input class="form-control" name="location" type="text" placeholder="location">
+			</div>
+			<div>
+				<label>Business Type<span class="req">*</span></label>
+				<input class="form-control" name="type" type="text" placeholder="Type">
+			</div>
+			<div>
+				<label>About the Business<span class="req">*</span></label>
+				<input class="form-control" name="bio" type="text" placeholder="Business bio">
+			</div>
+			<div>
+				
+			<form  method="post" enctype="multipart/form-data">
+    		Include an image that best portrays your business:
+    		<input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+    		<input class ="btn mt-1" type="submit" value="Upload Image" name="submit">
+		</form>
+			</div>
+			<p ><button class ="btn mt-1 btn-primary" type="submit"> &nbsp;&nbsp;&nbsp; &nbsp;Register Business&nbsp;&nbsp;&nbsp;&nbsp; </button></p>
+	</form>
+    </div>
+  </div>
+    
+  </div>
+  
+  <div class = "container footer">
+  
+  <!-- footer div that sits at the bottom of the page -->
+  
+	<footer>
+	<p>&copy;<a href="#">WeConnect</a>.</p>
+	<p>Powered by Ceero.</p>
+	</footer>
+  </div>
+</div>
+</body>
+</html>
