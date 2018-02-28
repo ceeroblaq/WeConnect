@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<!-- Weconnect title is clear-->
+<head>
+<title>WeConnect</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+.tangerine {
+    font-family: "Tangerine", serif;
+}
+body{
+    color:#ffffff;
+	background-image: url(https://images.pexels.com/photos/544917/pexels-photo-544917.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+}
+h1{
+    font-size: 60px;
+	
+}
+.header{
+	witdh:100%;}
+.content{
+	width:100%;
+}
+.signin{
+    width:30%;
+    float:right;
+}
+.logo{
+    width:70%;
+    float:left;
+}
+.signin{
+	width:30%;
+	float:right;
+}
+.signup{
+	width:50%;
+}
+.footer{
+	width:20%;
+}
+</style>
+</head>
+
+<!-- Here we have the signup page body -->
+<body>
+  <div class = "container-fluid main_enclosure">
+  <div class = "container-fluid">
+  <div class = "row mb-1 header">
+  
+    <!-- here we have top elements logo and login -->
+    
+      <!-- company logo div will sit at the top left of tha page as users are used to the format -->
+      <div class = "col-8 tangerine mt-1">
+        <h1><a href="#" style="text-decoration:none; color: #ff0000;"><span>We</span>Connect</a></h1>
+      </div>
+      
+      <!-- signin form goes to the top right of the page for easy access -->
+      <form class = "card col-4 pl-1 pr-1 mt-1" operation="login" method="post">
+	<div>
+		<input class="form-control mt-1" name="username" type="text" placeholder="Username or email">
+	</div>
+	<div>
+		<input class="form-control mt-1" name="password" type="password" placeholder="Password">
+	</div>
+	<p><button class="btn btn-primary mt-1" type="submit">Login</button></p>
+      </form>
+	  
+    </div> 
+  </div>
+    
+  <div class = "container-fluid mx-auto content">
+  
+  <!-- main page div that contains the article and the signup -->  
+  
+    <!-- Here we have an article that gives a brief overview of what the company is about. Position 2/3 towards the left side -->
+    <div class="article mx-auto">
+      <!-- heading to give the users a mental picture of limitlessness -->
+      <h2>
+       <span>Let's get you into the global market.</span>
+      </h2>
+      
+      <!-- who we are -->
+      <p>WeConnect provides a platform that brings businesses and individuals together. This platform creates awareness for businesses and gives the users the ability to write reviews about the businesses they have interacted with. </p>
+        <p>With WeConnect:
+	  <ul>
+	    <li><span>Find businesses that give you what you need when you need it</span></li>
+	    <li><span>Get you business out there to be explored by millions of potential customers</span></li>
+	   </ul>
+	  </p>
+	  <p>SignUp today, let US connect YOU.</p>
+     </div>
+	 
+    <!-- signup form that sits on 1/3 of the div on the right -->
+    <form class="container-fluid card signup mx-auto" method="post">
+		<div >
+			<div class="">
+				<label style="color: #000000;">Username<span class="req">*</span></label>
+				<input class="form-control" name="username" type="text" placeholder="Username">
+			</div>
+		</div>
+			<div>
+				<label style="color: #000000;">Email<span>*</span></label>
+				<input class="form-control" name="email" type="email" placeholder="email@example.com">
+			</div>
+			<div>
+				<label style="color: #000000;">Password<span class="req">*</span></label>
+				<input class="form-control" name="password" type="password" placeholder="password">
+			</div>
+			<p><button class="btn btn-primary mt-1" type="submit" > &nbsp;&nbsp;&nbsp; &nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp; </button></p>
+	</form>
+    
+  </div>
+  
+  <div class = "container-fluid mx-auto">
+  
+  <!-- footer div that sits at the bottom of the page -->
+  
+	<footer class = "container footer mx-auto">
+	<p class = "mx-auto">&copy;<a href="#">WeConnect</a> 2018.</p>
+	</footer>
+  </div>
+</div>
+</body>
+</html>
